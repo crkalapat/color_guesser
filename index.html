@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Guess the Color</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="index.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        </head>
+    <body>
+        <div id ="heading">
+            <h1>Guess the Color!</h1>
+            <h4>How colorful are you...</h4>
+        </div>
+            
+        <!--Don't be a cheater!-->
+        
+        <div id="color-box"></div>
+        
+        <div class="input-area mt-5">
+            <h2 id="pound">#</h2>
+            <input type="text" id="code" placeholder="FFFFFF" name="code" required minlength="6" maxlength="6" size="6" />
+            <div id="color-preview"></div>
+            <button class="btn" id="submit">Submit</button>
+        </div>
+
+        <div id="reset">
+            <button class="btn" id="reset-btn">New Color</button>
+        </div>
+    </body>
+</html>

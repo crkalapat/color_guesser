@@ -1,0 +1,121 @@
+:root {
+    --main-bg-color: brown;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0;
+}
+
+#color {
+    background-color: var(--main-bg-color);
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 2em;
+}
+
+input[type="text"] {
+    font-size: 24px;
+    font-family: monospace; /* Uniform character width */
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensures accurate width */
+    width: calc(1ch * var(--char-limit)); /* Adjust size based on character limit */
+}
+
+input[type="text"]::placeholder {
+    color: #c7c7c7; /* Gray color for placeholder text */
+    opacity: 1; /* Ensure visibility across all browsers */
+}
+
+.btn {
+    height: 50px;
+    width: 100px;
+    background-color: #0275d8;
+    color: white;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #0275d8;
+}
+
+.btn:hover {
+    background-color: #108fff;
+}
+
+.btn:active {
+    height: 49px;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 40px;
+    border: none;
+}
+
+#submit {
+    margin-top: none;
+    margin-left: 3em;
+}
+
+#reset-btn {
+    width: 120px;
+}
+
+#color-picker {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+#pound {
+    font-weight: 50;
+    font-size: 4em;
+    padding-right: 5px;
+    padding-top: 0;
+    margin: 0;
+    font-size: 50px;
+    line-height: 50px;
+    color: #ccd3e0;
+}
+
+#color-box {
+    margin-bottom: 1em;
+}
+
+#color-preview {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc; /* Optional: border for visibility */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+}
