@@ -42,9 +42,8 @@ window.onload = () => {
         var actualColor = hexToRgb(randomColor);
         const hexPattern = /^[0-9a-fA-F]{6}$/; // Regex for 6-character hex code
 
-        this.disabled = true;
-
         if (hexPattern.test(userInput)) {
+            this.disabled = true;
             const colorInput = document.getElementById('code').value.trim();
             const description = document.createElement("div");
             description.id = "description";
